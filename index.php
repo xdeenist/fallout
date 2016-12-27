@@ -1,6 +1,6 @@
 <?php
 
-define("SKILL_POINT", "1");
+define("SKILL_POINT", 1);
 define("MAXIMUM_SCORE_OF_POINT", 39);
 define("MAXIMUM_POINT_FOR_SKILL",9);
 

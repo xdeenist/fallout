@@ -26,21 +26,37 @@ $rand_sur = $surname[$res];
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+        body{
+            background: url(img/bg.jpg);
+        }
 		img{
 			width: 250px;
 			height: 250px;
 			border:2px solid black;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px black;
+            cursor: pointer;
+            opacity: 0.8;
 		}
+        img:hover{
+            opacity: 1;
+        }
 		span{
 			font-size: 48px;
 			font-weight: bold;
 			color: green;
-			font-family: 'New Time Roman';
 			text-shadow: 1px 1px 2px black, 0 0 1em black;
 		}
+        div{
+           
+            margin-left: 200px;
+            display: inline-block;
+            text-align: center;
+            
+        }
 	</style>
 </head>
 <body>
-	<span><?= $arr_man ." " . $rand_sur . " " . "age: ". $age . "</br>" . "<img src=\"img\\$arr_man.jpg\">";?></span>
+	<div><span><?= $arr_man ." " . $rand_sur . " " . "age: ". $age . "</br>" . "<img src=\"img\\$arr_man.jpg\">";?></span></div>
 </body>
 </html>

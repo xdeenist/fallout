@@ -1,4 +1,3 @@
-
 <?php
 
 $name= ['man'=>['Lucas','Owyn','Alphonse','Colin','Jericho','Augustus','Jesus','Lucifer','Mefistofel','Ieuda'],'female'=>['Amata','Clover','Moira','Jeniffer','Stefany','Marry','Jane','Kitana','Shiva','Morgana']];
@@ -9,15 +8,10 @@ $res= rand(0,9);
 $unisex = array_rand($name);
 $rand_sur = $surname[$res];
 
-// for($i=0;$i<=20;$i++){
-
-
 	$result= rand(0,9);
 	$arr_man = $name[$unisex][$result];
-	
 
-// }
-	?>
+?>
  
 
 <!DOCTYPE html>
@@ -60,3 +54,4 @@ $rand_sur = $surname[$res];
 	<div><span><?= $arr_man ." " . $rand_sur . " " . "age: ". $age . "</br>" . "<img src=\"img\\$arr_man.jpg\">";?></span></div>
 </body>
 </html>
+

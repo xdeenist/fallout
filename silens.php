@@ -7,13 +7,11 @@ $age = rand(16,40);
 $res= rand(0,9);
 $unisex = array_rand($name);
 $rand_sur = $surname[$res];
-
 	$result= rand(0,9);
 	$arr_man = $name[$unisex][$result];
 
 ?>
  
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,4 +52,3 @@ $rand_sur = $surname[$res];
 	<div><span><?= $arr_man ." " . $rand_sur . " " . "age: ". $age . "</br>" . "<img src=\"img\\$arr_man.jpg\">";?></span></div>
 </body>
 </html>
-
